@@ -1,0 +1,34 @@
+
+    <!-- header -->
+      <nav style="width: 100%;" class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" routerLink="/post-list" >Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/post-add" >Add Post</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                  <a class="nav-link" (click)="onSave()" style="color:rgb(255, 255, 255); cursor: pointer;">
+                    <i class="bi bi-file-earmark-arrow-up-fill"></i> Save</a>
+
+                   <a class="nav-link" (click)="onFetch()" style="color:rgb(255, 255, 255); cursor: pointer;">
+                    <i class="bi bi-cloud-download-fill"></i> Fetch</a>
+                   <a class="nav-link" style="color:rgb(255, 255, 255);" routerLink="/auth">
+                    <i class="bi bi-door-open"></i> Login</a>
+              </form>
+            </div>
+          </div>
+        </nav>
+    <!-- header ends -->
+  
+
+
+

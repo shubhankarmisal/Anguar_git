@@ -1,0 +1,16 @@
+<br><br>
+<h1>{{ post?.title | uppercase}}</h1>
+<p>
+  {{ post?.description }}
+</p>
+<img src="{{ post?.imagePath }}" style="margin-bottom: 10px;" class="img-fluid" alt="" srcset="" />
+<p>Author: {{ post?.author }}</p>
+<p>Date: {{ post?.datetimeCreated | date: "dd-MM-yyyy"}}</p>
+<button class="btn btn-outline-primary btn-sm" (click)="like_post()">
+  <i class="bi bi-hand-thumbs-up-fill"></i>
+  Like ({{post?.numberOfLikes}})
+</button>
+<br><br>
+<button type="submit" class="btn btn-success" (click)="onEdit()" >Edit</button> |
+<button type="submit" class="btn btn-danger" (click)="ondelete()">Delete</button>
+<br>
